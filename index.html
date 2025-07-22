@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Shoot Cost Analysis for Lodha</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .assumptions {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .assumptions h3 {
+            color: #34495e;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        .scenario-header {
+            background-color: #2980b9 !important;
+            text-align: center;
+            font-size: 16px;
+        }
+        .cost-cell {
+            text-align: right;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+        .total-row {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        .savings-positive {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .savings-negative {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .highlight-best {
+            background-color: #d5f4e6 !important;
+        }
+        .summary {
+            background: #e8f5e8;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 5px solid #27ae60;
+        }
+        .summary h3 {
+            color: #27ae60;
+            margin-top: 0;
+        }
+        .post-recovery {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid #ffc107;
+        }
+        @media print {
+            body { margin: 0; background: white; }
+            .container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>High-Resolution Drone Shoot Cost Analysis for Lodha</h1>
+        
+        <div class="assumptions">
+            <h3>Key Assumptions</h3>
+            <ul>
+                <li><strong>Standard Shoot Fee:</strong> ₹1,20,000 per shoot (unchanged in all scenarios)</li>
+                <li><strong>Guaranteed Shoots:</strong> 10 high-resolution shoots per year</li>
+                <li><strong>Analysis Period:</strong> 2 years (20 total shoots)</li>
+                <li><strong>Inspire 3 Rental:</strong> ₹60,000 per shoot (excluding GST)</li>
+                <li><strong>Inspire 3 Purchase Cost:</strong> ₹16,00,000</li>
+                <li><strong>Recovery Period:</strong> 2 years for 360 Experience investment</li>
+            </ul>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" style="vertical-align: middle;">Cost Component</th>
+                    <th class="scenario-header">Scenario 1</th>
+                    <th class="scenario-header">Scenario 2</th>
+                    <th class="scenario-header">Scenario 3</th>
+                </tr>
+                <tr>
+                    <th style="background-color: #3498db; text-align: center;">Renting Inspire 3</th>
+                    <th style="background-color: #3498db; text-align: center;">360 Experience Buys</th>
+                    <th style="background-color: #3498db; text-align: center;">Lodha Buys</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Initial Investment</strong></td>
+                    <td class="cost-cell">₹0</td>
+                    <td class="cost-cell">₹0</td>
+                    <td class="cost-cell">₹16,00,000</td>
+                </tr>
+                <tr>
+                    <td><strong>Per Shoot Cost Breakdown:</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;• Standard Shoot Fee</td>
+                    <td class="cost-cell">₹1,20,000</td>
+                    <td class="cost-cell">₹1,20,000</td>
+                    <td class="cost-cell">₹1,20,000</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;• Inspire 3 Rental</td>
+                    <td class="cost-cell">₹60,000</td>
+                    <td class="cost-cell">₹0</td>
+                    <td class="cost-cell">₹0</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;• Recovery Charge</td>
+                    <td class="cost-cell">₹0</td>
+                    <td class="cost-cell">₹80,000</td>
+                    <td class="cost-cell">₹0</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Per Shoot (Years 1-2)</strong></td>
+                    <td class="cost-cell">₹1,80,000</td>
+                    <td class="cost-cell">₹2,00,000</td>
+                    <td class="cost-cell">₹1,20,000</td>
+                </tr>
+                <tr>
+                    <td><strong>Year 1 Cost (10 shoots)</strong></td>
+                    <td class="cost-cell">₹18,00,000</td>
+                    <td class="cost-cell">₹20,00,000</td>
+                    <td class="cost-cell">₹12,00,000</td>
+                </tr>
+                <tr>
+                    <td><strong>Year 2 Cost (10 shoots)</strong></td>
+                    <td class="cost-cell">₹18,00,000</td>
+                    <td class="cost-cell">₹20,00,000</td>
+                    <td class="cost-cell">₹12,00,000</td>
+                </tr>
+                <tr class="total-row">
+                    <td><strong>Total 2-Year Cost</strong></td>
+                    <td class="cost-cell">₹36,00,000</td>
+                    <td class="cost-cell">₹40,00,000</td>
+                    <td class="cost-cell highlight-best">₹40,00,000</td>
+                </tr>
+                <tr>
+                    <td><strong>Savings vs Scenario 1</strong></td>
+                    <td class="cost-cell">-</td>
+                    <td class="cost-cell savings-negative">-₹4,00,000</td>
+                    <td class="cost-cell savings-negative">-₹4,00,000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="post-recovery">
+            <h3>📊 Post-Recovery Analysis (Year 3 onwards)</h3>
+            <table style="margin: 10px 0;">
+                <thead>
+                    <tr>
+                        <th>Scenario</th>
+                        <th>Per Shoot Cost</th>
+                        <th>Annual Cost (10 shoots)</th>
+                        <th>Savings vs Renting</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Scenario 1: Renting</strong></td>
+                        <td class="cost-cell">₹1,80,000</td>
+                        <td class="cost-cell">₹18,00,000</td>
+                        <td class="cost-cell">-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scenario 2: 360 Experience</strong></td>
+                        <td class="cost-cell">₹1,60,000</td>
+                        <td class="cost-cell">₹16,00,000</td>
+                        <td class="cost-cell savings-positive">₹2,00,000</td>
+                    </tr>
+                    <tr class="highlight-best">
+                        <td><strong>Scenario 3: Lodha Owns</strong></td>
+                        <td class="cost-cell">₹1,20,000</td>
+                        <td class="cost-cell">₹12,00,000</td>
+                        <td class="cost-cell savings-positive">₹6,00,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="summary">
+            <h3>💡 Key Insights</h3>
+            <ul>
+                <li><strong>Short-term (2 years):</strong> Renting is ₹4,00,000 cheaper than purchasing options</li>
+                <li><strong>Break-even point:</strong> Both purchase scenarios become profitable from Year 3</li>
+                <li><strong>Long-term winner:</strong> Lodha buying the drone offers maximum savings (₹6,00,000 annually from Year 3)</li>
+                <li><strong>Total investment recovery:</strong> If continuing beyond 2 years, purchase scenarios recover the additional initial cost within 8 months of Year 3</li>
+                <li><strong>Risk consideration:</strong> Lodha bears equipment risk but gains maximum cost control</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
